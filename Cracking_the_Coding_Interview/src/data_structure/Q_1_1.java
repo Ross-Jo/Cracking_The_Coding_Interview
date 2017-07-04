@@ -30,6 +30,6 @@ public class Q_1_1 {
 		
 		String sentence = new String("abcdefghijklmnopqrstuvwxyz");
 		System.out.println(check_unique_char(sentence));
-		
+		 
 	}
 }
