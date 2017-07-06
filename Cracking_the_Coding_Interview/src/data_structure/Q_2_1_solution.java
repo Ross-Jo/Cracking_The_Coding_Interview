@@ -22,6 +22,7 @@ class LinkedListNode { // Node 클래스
 
 public class Q_2_1_solution {
 
+	// 버퍼가 있는 경우
 	public static void deleteDups(LinkedListNode n) {
 		Hashtable table = new Hashtable(); // Hashtable을 사용해서 자료형 타입 제약 및 연결되는 duplication check를 위한 node갯수 제약을 없앰
 		LinkedListNode previous = null;
@@ -35,6 +36,26 @@ public class Q_2_1_solution {
 			n = n.next;
 		}
 	}
+	
+	// 버퍼가 없는 경우
+	public static void deleteDups_m(LinkedListNode head){
+		if (head == null) return;
+		
+		LinkedListNode current = head;
+		while(current != null){
+			LinkedListNode runner = current;
+			while(runner.next!=null){
+				if(runner.next.data == current.data){
+					runner.next = runner.next.next;
+				}
+				else{
+					runner = runner.next;
+				}
+			}
+			current = current.next;
+		}
+	}
+	// 다만 이렇게 할 경우, 공간 복잡도는 O(1)이 되지만, 수행 시간은 O(N^2)이 된다.
 
 	public static void main(String args[]) {
 		LinkedListNode head = new LinkedListNode(0);
