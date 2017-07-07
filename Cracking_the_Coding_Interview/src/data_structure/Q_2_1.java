@@ -7,17 +7,17 @@ package data_structure;
  *  
  */
 
-class Node { // Node 클래스
-	Node next = null;
+class Node_2_1 { // Node 클래스
+	Node_2_1 next = null;
 	int i;
 
-	public Node(int i) {
+	public Node_2_1(int i) {
 		this.i = i;
 	}
 
 	void appendToTail(int i) {
-		Node end = new Node(i);
-		Node n = this;
+		Node_2_1 end = new Node_2_1(i);
+		Node_2_1 n = this;
 		while (n.next != null) {
 			n = n.next;
 		}
@@ -27,9 +27,9 @@ class Node { // Node 클래스
 
 public class Q_2_1 {
 
-	public static void discard_duplication(Node startNode, Node head) {
+	public static void discard_duplication(Node_2_1 startNode, Node_2_1 head) {
 		boolean[] check_m = new boolean[100]; // 임시 버퍼, 100칸
-		Node tmp = head;
+		Node_2_1 tmp = head;
 
 		while (startNode.next != null) {
 			if (check_m[startNode.i]) {
@@ -49,7 +49,7 @@ public class Q_2_1 {
 	}
 
 	public static void main(String[] args) {
-		Node head = new Node(0); // 0 은 header 취급
+		Node_2_1 head = new Node_2_1(0); // 0 은 header 취급
 
 		head.appendToTail(1);
 		head.appendToTail(2);
