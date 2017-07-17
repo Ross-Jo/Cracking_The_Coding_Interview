@@ -45,7 +45,7 @@ public class Q_4_2 {
 	public static void main(String[] args) {
 		ArrayList<ArrayList<Node_4_2>> graph = new ArrayList<ArrayList<Node_4_2>>();
 		
-		// 그래프 직접 입력
+		// 그래프 직접 입력 - 더 간단한 그래프 표현 방법에 대하여 고민해 볼 것
 		int nodeNum = 9;
 		int[][] matrix = new int[nodeNum][];
 		matrix[0] = new int[]{1,3};
