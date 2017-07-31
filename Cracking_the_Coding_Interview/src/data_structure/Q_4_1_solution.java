@@ -12,7 +12,7 @@ class TreeNode {
 	public TreeNode left;
 	public TreeNode right;
 	public TreeNode parent;
-	private int size = 0;
+	private int size = 0; // 노드가 사이즈를 가지고 있음
 
 	public TreeNode(int d) {
 		data = d;
@@ -21,14 +21,12 @@ class TreeNode {
 
 	private void setLeftChild(TreeNode left) {
 		this.left = left;
-		if (left != null)
-			left.parent = this;
+		if (left != null) left.parent = this;
 	}
 
 	private void setRightChild(TreeNode right) {
 		this.right = right;
-		if (right != null)
-			right.parent = this;
+		if (right != null) right.parent = this;
 	}
 
 	public void insertInOrder(int d) {
@@ -147,24 +145,18 @@ class BTreePrinter {
 					continue;
 				}
 
-				if (nodes.get(j).left != null)
-					System.out.print("/");
-				else
-					BTreePrinter.printWhitespaces(1);
+				if (nodes.get(j).left != null) System.out.print("/");
+				else BTreePrinter.printWhitespaces(1);
 
 				BTreePrinter.printWhitespaces(i + i - 1);
 
-				if (nodes.get(j).right != null)
-					System.out.print("\\");
-				else
-					BTreePrinter.printWhitespaces(1);
+				if (nodes.get(j).right != null) System.out.print("\\");
+				else BTreePrinter.printWhitespaces(1);
 
 				BTreePrinter.printWhitespaces(endgeLines + endgeLines - i);
 			}
-
 			System.out.println("");
 		}
-
 		printNodeInternal(newNodes, level + 1, maxLevel);
 	}
 
@@ -184,8 +176,7 @@ class BTreePrinter {
 		for (Object object : list) {
 			if (object != null)
 				return false;
-		}
-
+		}		
 		return true;
 	}
 }
@@ -195,5 +186,4 @@ public class Q_4_1_solution {
 	public static void main(String[] args) {
 
 	}
-
 }
