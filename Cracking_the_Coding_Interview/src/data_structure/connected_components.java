@@ -64,7 +64,8 @@ class ConnectedComponent{
 		compid = new int[n];
 		compsize = new int[n];
 		for(int v=0; v<n; v++){
-			if(marked[v]==false){
+			if(marked[v]==false){ // DFS를 이용하여 특정 노드에서 Connected component가 무엇인지 (해당 CC에 포함되어 있는 노드들을 색칠해가며) 알아낸다. 
+				                  // 이와 같은 방식으로 Connected components들을 식별해 낸다.
 				dfs(G, v);
 				countCC++;
 			}
