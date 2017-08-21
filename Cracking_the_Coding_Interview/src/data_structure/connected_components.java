@@ -1,9 +1,9 @@
 package data_structure;
 
-class Node{
+class Node_CC{
 	public Edge firstEdge;
 	public int degree;
-	public Node(){
+	public Node_CC(){
 		firstEdge = null;
 		degree = 0;
 	}
@@ -20,13 +20,13 @@ class Edge{
 
 class Graph{
 	private int N; // number of nodes
-	public Node[] graph;
+	public Node_CC[] graph;
 	
 	public Graph(int n){
 		N = n;
-		graph = new Node[N];
+		graph = new Node_CC[N];
 		for(int i=0; i<N; i++){
-			graph[i] = new Node();
+			graph[i] = new Node_CC();
 		}
 	}
 	
