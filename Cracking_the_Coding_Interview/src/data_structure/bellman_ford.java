@@ -3,6 +3,7 @@ package data_structure;
 // 시간 복잡도
 // 인접 행렬 사용시 : O(N^?)
 // 인접 리스트 사용시 : O(NE)
+// 제약조건 : No negative cycle
 public class bellman_ford {
 	
 	/*

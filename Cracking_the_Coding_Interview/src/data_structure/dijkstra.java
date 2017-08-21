@@ -1,6 +1,6 @@
 package data_structure;
 
-// 간선이 음수의 cost를 가지는 경우는 사용 불가
+// 제약조건 : 간선이 음수의 cost를 가지는 경우는 사용 불가
 // 시작 vertex로 부터 다른 모든 vertex들 까지의 가장 짧은 거리를 찾아냄
 // 시간 복잡도는 O(n^2). cf. 바이너리 힙 사용의 경우 : O(elogN), 피보나치 힙 사용의 경우 O(NlogN+e)
 // input이 dense 한 경우 좋음
