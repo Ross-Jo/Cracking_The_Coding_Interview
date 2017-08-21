@@ -52,7 +52,7 @@ class Graph{
 	
 }
 
-class ConnectedComponent{
+class ConnectedComponent{ 
 	private boolean[] marked;
 	private int[] compid; // compid[v] = component ID of v
 	private int[] compsize; // compsize[compid] = number of vertices in component
