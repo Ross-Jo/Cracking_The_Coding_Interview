@@ -1,4 +1,6 @@
 // 참고 : http://swlock.blogspot.kr/2016/03/power-set.html
+// 참고 : http://swlock.blogspot.kr/2016/06/power-set-2.html	
+// 참고 : http://swlock.blogspot.kr/2016/03/dp-power-set-with-dp.html
 package data_structure;
 
 public class power_set {
