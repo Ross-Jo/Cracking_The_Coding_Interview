@@ -21,7 +21,7 @@ public class tree_and_graph {
 	}
 	*/
 	
-	//sudo - Queue 활용이 키 포인트
+	//sudo - Queue 활용이 키 포인트. 잘 알아두자.
 	/*
 	public static void BFS(Node root){
 		Queue queue = new Queue();
