@@ -11,9 +11,8 @@ package data_structure;
 //	public static void powerset(int n, int depth) {
 //		
 //		if (n == depth) {
-//			int i;
 //			System.out.print("{");
-//			for (i = 0; i < n; i++) {
+//			for (int i = 0; i < n; i++) {
 //				if (flag[i] == 1)
 //					System.out.print(data[i] + " ");
 //			}
